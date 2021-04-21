@@ -1,0 +1,169 @@
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.space {
+  
+  position: absolute;
+}
+.title2{
+  margin-left: -120px !important;
+}
+.skillRow{
+  margin-top: 5px;
+margin-left: -200px !important;
+}
+.title{
+  margin-top: 50px;
+  margin-left:120px !important;
+}
+.loadingImg{
+  width: 240px;
+  margin-bottom:-495px;
+}
+.caruselItem{
+  width: 500px !important;
+  
+}
+.item1{
+  width: 300px !important;
+  margin-left: 99px;
+}
+.item2{
+  width: 300px !important;
+  margin-left: 99px;
+}
+.carousel{
+  margin-left: -40px;
+}
+
+.item3{
+  width: 300px !important;
+  margin-left: 99px;
+}
+.laptop{
+  position: relative;
+  width: 300px;
+  margin-top: 20rem;
+}
+.rowLaptop{
+  color:#22ACC0;
+  font-size:28px;
+  font-weight: 1000;
+  letter-spacing:1px;
+  font-family: 'Playfair Display', serif;
+}
+#firstCol{
+  background-color:#22ACC0;
+ border: 4px double #22ACC0;
+ border-top:none;
+ border-left:none;
+ border-bottom:none;
+}
+.firstName1 {
+  color:black;
+  font-size: 230px;
+  letter-spacing:10px;
+  margin-top: -35px;
+}
+.jobTitle{
+  color:black;
+  font-size: 50px;
+  letter-spacing:3px;
+  margin-top: -18px;
+  background-color:black;
+  color:#22ACC0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.infoText{
+  color:black; margin-left:15px;
+  font-size:19px;
+  letter-spacing: 1px;
+}
+
+.icon{
+color:#22ACC0;
+background-color:black;
+padding:7px;
+font-size: 30px;
+border-radius:50px;
+margin-left: 98px;
+}
+.secondName{
+  color:black;
+  font-size: 88px;
+  letter-spacing:3px;
+  margin-top: -100px;
+}
+.firstName2 {
+  color:black;
+  font-size: 230px;
+  letter-spacing:30px;
+  margin-top: -180px;
+}
+div{
+}
+.item3{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.caption{
+  margin-bottom: 220px;
+}
+h3{
+  color:black;
+  font-size: 30px;
+}
+p{
+  color:black;
+  font-size: 20px;
+}
+.text2{
+  font-size:13.5px;
+  font-weight:400;
+  padding-left: 40px;
+  text-align: left;
+  width:500px;
+  margin-left:-140px !important;
+  border: 1px solid #22ACC0;
+  border-top:none;
+  border-right:none;
+  border-bottom:none;
+}
+.skill{
+  border:2px solid #22ACC0;
+  border-radius: 50px;
+  width:55px;
+  height:55px;
+  text-align:center;
+  padding-top: 15px;
+  margin-left: 30px;
+}
+.skill2{
+  border:2px solid #22ACC0;
+  background-color:#22ACC0;
+  color:black;
+  border-radius: 50px;
+  width:55px;
+  height:55px;
+  text-align:center;
+  padding-top: 15px;
+  margin-left: 30px;
+}
+.text{
+  font-size:13.5px;
+  font-weight:400;
+  padding-left: 40px;
+  text-align: left;
+  width:500px;
+  margin-left:100px !important;
+  border: 1px solid #22ACC0;
+  border-top:none;
+  border-right:none;
+  border-bottom:none;
+}
+
+
