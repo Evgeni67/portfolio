@@ -116,7 +116,7 @@ class App extends Component {
             </Row>
           </Col>
           <Col sm={3}  xs = {12}id="thirdCol">
-            <Row className="title2 software d-flex justify-content-left mt-5">
+            <Row className="title2 software d-flex justify-content-left ">
               Software Skills
             </Row>
             <Row className="text2 d-flex justify-content-center">

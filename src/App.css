@@ -204,6 +204,7 @@ p{
   }
   .carousel1{
     margin-left: 1px !important;
+    margin-bottom: 100px !important;
   }
   .carousel{
     margin-left: 0px !important;
@@ -244,4 +245,10 @@ letter-spacing:27px
   .technologyCon{
     margin-left: 0px !important;
   }
+  .software{
+    margin-top: 300px !important;
+  }
+}
+.carousel2{
+  margin-left: -550px !important;
 }
