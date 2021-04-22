@@ -121,7 +121,7 @@ class App extends Component {
               <h className="skill"> JAVA </h>  <h className="skill"> TS </h>
               </Row>
             </Row>
-            <Row className="title2 d-flex justify-content-left mt-5">
+            <Row className="title2 d-flex justify-content-left mt-4">
               Framework
 
             </Row>
@@ -135,23 +135,13 @@ class App extends Component {
             <Row className="title2 d-flex justify-content-left mt-3">
               Previous projects
             </Row>
-            <Row className="text2 d-flex justify-content-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            <Row className="text2 d-flex justify-content-center mt-2">
+              <img src = "https://prikachi.net/images/RiDvl.png" className = "logoProject"/>
             </Row>
-            <Row className="title2 d-flex justify-content-left mt-3">
-              Lorem ipsum
+            <Row className="text2 d-flex justify-content-center mt-4">
+              <img src = "https://prikachi.net/images/RiDvl.png" className = "logoProject"/>
             </Row>
-            <Row className="text2 d-flex justify-content-center mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            </Row>
+          
           </Col>
         </Row>
       </>
