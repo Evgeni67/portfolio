@@ -37,7 +37,29 @@ margin-left: -200px !important;
 .carousel{
   margin-left: -40px;
 }
+.col1{
+  background-color: #22ACC0;
+}
+.skillName{
+  margin-bottom: -15px;
+  font-size:16px
+}
+.technologyCon{
+  border-left: 1px solid #22ACC0;
+  width:291px !important;
+  margin-left: -140px !important;
+}
+.carousel2{
+  width:300px !important;
+  margin-left: -160px !important;
 
+}
+.skillInline{
+  height:10px !important;
+  width:290px !important;
+  border: 1px solid #22ACC0 !important;
+  margin-left: 0px !important;
+}
 .item3{
   width: 300px !important;
   margin-left: 99px;
@@ -124,7 +146,6 @@ p{
 .text2{
   font-size:13.5px;
   font-weight:400;
-  padding-left: 40px;
   text-align: left;
   width:500px;
   margin-left:-140px !important;
@@ -167,3 +188,60 @@ p{
 }
 
 
+@media screen and (max-width: 600px) {
+  .text {
+    width:270px !important;
+    margin-left: 30px !important;
+    padding-left: 10px !important;
+  }
+  .jobTitle{
+    font-size:27px;
+    margin-left: -18px !important;
+    margin-top: -10px;
+  }
+  .icon{
+    margin-left: 30px;
+  }
+  .carousel1{
+    margin-left: 1px !important;
+  }
+  .carousel{
+    margin-left: 0px !important;
+  }
+  .secondName{
+    font-size:55px;
+    margin-top: -70pxs;
+  }
+  .firstName1{
+    font-size:110px !important;
+    margin-left:-10px;
+  }
+  .firstName2{
+    font-size:110px !important;
+    margin-left: 10px;
+margin-top: -90px;
+margin-bottom: 50px;
+letter-spacing:27px
+  }
+  .title2{
+    margin-left: 0px !important;
+    justify-content:center !important;
+    margin-left: 0px !important;
+  }
+  .certificates{
+  justify-content:center !important;
+  margin-left: 0px !important;
+  }
+  .text2{
+    margin-left: -10px !important;
+  }
+  .skill{
+    margin-left: 10px !important;
+  }
+  .skill2{
+    margin-left: 10px !important;
+  }
+  .technologyCon{
+    margin-left: 0px !important;
+  }
+}
