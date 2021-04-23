@@ -19,23 +19,12 @@ margin-left: -200px !important;
   margin-left:120px !important;
 }
 .loadingImg{
-  width: 240px;
-  margin-bottom:-495px;
-}
-.caruselItem{
-  width: 500px !important;
-  
-}
-.item1{
-  width: 300px !important;
-  margin-left: 99px;
-}
-.item2{
-  width: 300px !important;
-  margin-left: 99px;
+  width: 210px;
+  margin-bottom:-515px;
 }
 .carousel{
-  margin-left: -40px;
+  margin-left: -50px;
+  width:272px
 }
 .col1{
   background-color: #22ACC0;
@@ -51,7 +40,6 @@ margin-left: -200px !important;
 }
 .carousel2{
   width:300px !important;
-  margin-left: -160px !important;
 
 }
 .skillInline{
@@ -60,10 +48,7 @@ margin-left: -200px !important;
   border: 1px solid #22ACC0 !important;
   margin-left: 0px !important;
 }
-.item3{
-  width: 300px !important;
-  margin-left: 99px;
-}
+
 .laptop{
   position: relative;
   width: 300px;
@@ -133,7 +118,7 @@ div{
 }
 
 .caption{
-  margin-bottom: 220px;
+  margin-bottom: 120px;
 }
 h3{
   color:black;
@@ -186,7 +171,10 @@ p{
   border-right:none;
   border-bottom:none;
 }
-
+.carousel1{
+  border-left: 1px solid #22ACC0;
+  padding-left: 40px;
+}
 
 @media screen and (max-width: 600px) {
   .text {
@@ -202,16 +190,12 @@ p{
   .icon{
     margin-left: 30px;
   }
-  .carousel1{
-    margin-left: 1px !important;
-    margin-bottom: 100px !important;
-  }
-  .carousel{
-    margin-left: 0px !important;
-  }
   .secondName{
     font-size:55px;
     margin-top: -70pxs;
+  }
+  .carouselRowInside{
+    margin-left: -200px !important;
   }
   .firstName1{
     font-size:110px !important;
@@ -250,5 +234,5 @@ letter-spacing:27px
   }
 }
 .carousel2{
-  margin-left: -550px !important;
+  margin-left: -160px;
 }

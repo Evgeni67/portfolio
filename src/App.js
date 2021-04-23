@@ -80,8 +80,8 @@ class App extends Component {
             <Row className="title certificates d-flex justify-content-left mt-5">
               Certificates
             </Row>
-            <Row className=" d-flex justify-content-center mt-3">
-              <Carousel className="carousel carousel1">
+            <Row className="carouselRowInside d-flex justify-content-left mt-3 ml-5">
+              <Carousel className="carousel carousel1 ml-5">
                 <Carousel.Item className="caruselItem">
                   <img
                     className="item1"
@@ -103,7 +103,7 @@ class App extends Component {
                     alt="Third slide"
                   />
 
-                  <Carousel.Caption className="caption">
+                  <Carousel.Caption className="caption ">
                     <img
                       className="loadingImg"
                       src="https://i.gifer.com/7VE.gif"
@@ -117,7 +117,7 @@ class App extends Component {
           </Col>
           <Col sm={3}  xs = {12}id="thirdCol">
             <Row className="title2 software d-flex justify-content-left ">
-              Software Skills
+              Programming languages
             </Row>
             <Row className="text2 d-flex justify-content-center">
               <Row className="skillRow">
@@ -138,7 +138,7 @@ class App extends Component {
             <Row className="title2 d-flex justify-content-left mt-3">
               Previous projects
             </Row>
-            <Row className=" d-flex justify-content-center mt-2">
+            <Row className="text2 d-flex justify-content-center mt-2">
               <Carousel className="carousel2">
                 <Carousel.Item className="carousle2Item">
                   <img
