@@ -14,15 +14,15 @@ class App extends Component {
     document.getElementById(
       "firstCol"
     ).style.height = `${window.innerHeight}px`;
-    document.getElementById("firstCol").style.width = `${window.innerWidth}px`;
+    document.getElementById("firstCol").style.width = `${window.innerWidth+50}px`;
     document.getElementById(
       "secondCol"
     ).style.height = `${window.innerHeight}px`;
-    document.getElementById("secondCol").style.width = `${window.innerWidth}px`;
+    document.getElementById("secondCol").style.width = `${window.innerWidth+50}px`;
     document.getElementById(
       "thirdCol"
     ).style.height = `${window.innerHeight}px`;
-    document.getElementById("thirdCol").style.width = `${window.innerWidth}px`;
+    document.getElementById("thirdCol").style.width = `${window.innerWidth+50}px`;
   }
 }
   render() {
