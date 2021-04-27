@@ -19,11 +19,11 @@ margin-left: -200px !important;
   margin-left:120px !important;
 }
 .loadingImg{
-  width: 210px;
+  width: 220px;
   margin-bottom:-515px;
 }
 .carousel{
-  margin-left: -50px;
+  margin-left: -270px;
   width:272px
 }
 .col1{
@@ -171,10 +171,6 @@ p{
   border-right:none;
   border-bottom:none;
 }
-.carousel1{
-  border-left: 1px solid #22ACC0;
-  padding-left: 40px;
-}
 
 @media screen and (max-width: 600px) {
   .text {
@@ -190,12 +186,16 @@ p{
   .icon{
     margin-left: 30px;
   }
+  .carousel1{
+    margin-left: 1px !important;
+    margin-bottom: 100px !important;
+  }
+  .carousel{
+    margin-left: 0px !important;
+  }
   .secondName{
     font-size:55px;
     margin-top: -70pxs;
-  }
-  .carouselRowInside{
-    margin-left: -200px !important;
   }
   .firstName1{
     font-size:110px !important;
@@ -216,6 +216,9 @@ letter-spacing:27px
   .certificates{
   justify-content:center !important;
   margin-left: 0px !important;
+  }
+  .carouselRowInside{
+    justify-content:center !important;
   }
   .text2{
     margin-left: -10px !important;

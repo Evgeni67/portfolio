@@ -14,22 +14,19 @@ class App extends Component {
     document.getElementById(
       "firstCol"
     ).style.height = `${window.innerHeight}px`;
-    document.getElementById("firstCol").style.width = `${window.innerWidth+50}px`;
     document.getElementById(
       "secondCol"
     ).style.height = `${window.innerHeight}px`;
-    document.getElementById("secondCol").style.width = `${window.innerWidth+50}px`;
     document.getElementById(
       "thirdCol"
     ).style.height = `${window.innerHeight}px`;
-    document.getElementById("thirdCol").style.width = `${window.innerWidth+50}px`;
   }
 }
   render() {
     return (
       <>
         <Row className="rowLaptop d-flex justify-content-center ">
-          <Col sm={4} xs = {12}id="firstCol">
+          <Col sm={4} xs = {12} md = {4}id="firstCol">
             <Row className=" d-flex justify-content-center ">
               <p className="firstName1">EVG</p>
               </Row>
@@ -59,7 +56,7 @@ class App extends Component {
               <p className="infoText">www.localhost:22.com</p>
             </Row>
           </Col>
-          <Col sm={5}  xs = {12}id="secondCol">
+          <Col sm={5}  xs = {12} md = {4}id="secondCol">
             {" "}
             <Row className="title d-flex justify-content-left ">Me</Row>
             <Row className="text d-flex justify-content-center">
@@ -80,8 +77,8 @@ class App extends Component {
             <Row className="title certificates d-flex justify-content-left mt-5">
               Certificates
             </Row>
-            <Row className="carouselRowInside d-flex justify-content-left mt-3 ml-5">
-              <Carousel className="carousel carousel1 ml-5">
+            <Row className="d-flex justify-content-center mt-3">
+              <Carousel className="carousel1">
                 <Carousel.Item className="caruselItem">
                   <img
                     className="item1"
@@ -115,7 +112,7 @@ class App extends Component {
               </Carousel>
             </Row>
           </Col>
-          <Col sm={3}  xs = {12}id="thirdCol">
+          <Col sm={3}  xs = {12} md = {4}id="thirdCol">
             <Row className="title2 software d-flex justify-content-left ">
               Programming languages
             </Row>
