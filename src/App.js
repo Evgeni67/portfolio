@@ -77,7 +77,7 @@ class App extends Component {
             <Row className="title certificates d-flex justify-content-left mt-5">
               Certificates
             </Row>
-            <Row className="d-flex justify-content-center mt-3">
+            <Row className="text2 d-flex justify-content-center mt-3">
               <Carousel className="carousel1">
                 <Carousel.Item className="caruselItem">
                   <img
@@ -160,9 +160,10 @@ class App extends Component {
             <Row className="title2 mt-3 mb-1 d-flex justify-content-left">
               Technologies
             </Row>
-            <Container className = "technologyCon">
+            <Row className = "d-flex justify-content-left">
+            <Container className = " ">
             
-            <Row className="skillName d-flex justify-content-center">React </Row>
+            <Row className="skillName d-flex justify-content-left">React </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col sm={2} xs = {2}className = "col1"> </Col>
@@ -173,7 +174,7 @@ class App extends Component {
                 <Col sm={2}xs = {2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">Express </Row>
+            <Row className="skillName d-flex justify-content-left">Express </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col sm={2} xs = {2}className = "col1"> </Col>
@@ -184,7 +185,7 @@ class App extends Component {
                 <Col sm={2} xs = {2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">Mongo </Row>
+            <Row className="skillName d-flex justify-content-left">Mongo </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col xs = {2}sm={2} className = "col1"> </Col>
@@ -195,7 +196,7 @@ class App extends Component {
                 <Col xs = {2}sm={2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">Node </Row>
+            <Row className="skillName d-flex justify-content-left">Node </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col xs = {2} sm={2} className = "col1"> </Col>
@@ -206,7 +207,7 @@ class App extends Component {
                 <Col xs = {2} sm={2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">TypeScript </Row>
+            <Row className="skillName d-flex justify-content-left">TypeScript </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col xs = {2} sm={2} className = "col1"> </Col>
@@ -217,7 +218,7 @@ class App extends Component {
                 <Col xs = {2} sm={2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">PostgreSql </Row>
+            <Row className="skillName d-flex justify-content-left">PostgreSql </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col xs = {2}  sm={2} className = "col1"> </Col>
@@ -228,7 +229,7 @@ class App extends Component {
                 <Col xs = {2} sm={2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">SCRUM </Row>
+            <Row className="skillName d-flex justify-content-left">SCRUM </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col sm={2} xs = {2}className = "col1"> </Col>
@@ -239,7 +240,7 @@ class App extends Component {
                 <Col sm={2} xs = {2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">REDUX </Row>
+            <Row className="skillName d-flex justify-content-left">REDUX </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col sm={2} xs = {2}className = "col1"> </Col>
@@ -250,7 +251,7 @@ class App extends Component {
                 <Col sm={2} xs = {2}className = "col1"> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">GitHub </Row>
+            <Row className="skillName d-flex justify-content-left">GitHub </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col sm={2} xs = {2}className = "col1"> </Col>
@@ -261,7 +262,7 @@ class App extends Component {
                 <Col sm={2} xs = {2}> </Col>{" "}
               </Row>
             </Row>
-            <Row className="skillName d-flex justify-content-center">Heroku </Row>
+            <Row className="skillName d-flex justify-content-left">Heroku </Row>
             <Row className=" d-flex justify-content-left mt-2">
               <Row className="skillInline  mt-2">
                 <Col sm={2}xs = {2} className = "col1"> </Col>
@@ -273,7 +274,7 @@ class App extends Component {
               </Row>
             </Row>
             </Container>
-            
+            </Row>
             
             
           </Col>

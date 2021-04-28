@@ -8,7 +8,6 @@ img {
   position: absolute;
 }
 .title2{
-  margin-left: -120px !important;
 }
 .skillRow{
   margin-top: 5px;
@@ -33,11 +32,7 @@ margin-left: -200px !important;
   margin-bottom: -15px;
   font-size:16px
 }
-.technologyCon{
-  border-left: 1px solid #22ACC0;
-  width:291px !important;
-  margin-left: -140px !important;
-}
+
 .carousel2{
   width:300px !important;
 
@@ -133,7 +128,6 @@ p{
   font-weight:400;
   text-align: left;
   width:500px;
-  margin-left:-140px !important;
   border: 1px solid #22ACC0;
   border-top:none;
   border-right:none;
@@ -171,7 +165,9 @@ p{
   border-right:none;
   border-bottom:none;
 }
-
+.carousel1{
+  margin-left: 15px;
+}
 @media screen and (max-width: 600px) {
   .text {
     width:270px !important;
