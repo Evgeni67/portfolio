@@ -13,46 +13,53 @@ class App extends Component {
   render() {
     return (
       <>
-      <Row className = "mb-5">
-          <Col className="d-flex justify-content-center" id="firstCol">
-            <Container className="firstContainer ml-1">
-              <Row className=" d-flex justify-content-center ">
-                <p className="firstName1">EVG</p>
+            {" "}
+            <Row  id="firstCol" className=" d-flex justify-content-center ">
+        
+              <Col className="d-flex justify-content-center">
+              <p className="firstName1 ml-3">Evgeni</p>{" "}
+              </Col>
+              <Col>
+              <p className="secondName d-flex justify-content-center">Gyurov</p>{" "}
+              </Col>
+              <Col className="d-flex justify-content-center">
+              <p className="jobTitle">Web Dev</p>
+              </Col>
+        </Row>
+             
+
+          <Row className="infoRow mt-3 mb-5">
+            <Col xs={12} lg={3}>
+              <Row className = "d-flex justify-content-center">
+                {" "}
+                <ImLocation className="icon" />{" "}
+                <p className="infoText">Sofia, Bulgarias</p>{" "}
               </Row>
-              <Row className=" d-flex justify-content-center ">
-                <p className="firstName2">ENI</p>
-              </Row>
-              <Row className=" d-flex justify-content-center ">
-                <p className="secondName">Gyurov</p>
-              </Row>
-              <Row className=" d-flex justify-content-center ">
-                <p className="jobTitle">Web Developer</p>
-              </Row>
-              
-            
-              <Row className=" d-flex justify-content-center mt-5">
-                <ImLocation className="icon custom1" />{" "}
-                <p className="infoText">Sofia, Bulgarias</p>
-              </Row>
-              <Row className=" d-flex justify-content-center custom">
+            </Col>
+            <Col xs={12} lg={3}>
+              <Row className = "d-flex justify-content-center">
+                {" "}
                 <FaMobileAlt className="icon " />{" "}
-                <p className="infoText"> (+359) 876 710 109</p>
+                <p className="infoText"> (+359) 876 710 109</p>{" "}
               </Row>
-             
-             
-              <Row className=" d-flex justify-content-center ">
+            </Col>
+            <Col xs={12} lg={3}>
+              <Row className = "d-flex justify-content-center">
+                {" "}
                 <CgWebsite className="icon" />{" "}
-                <p className="infoText">https://www.linkedin.com/</p>
+                <p className="infoText">https://www.linkedin.com/</p>{" "}
               </Row>
-              <Row className=" d-flex justify-content-center ">
+            </Col>
+            <Col xs={12} lg={3}>
+              <Row className = "d-flex justify-content-center">
+                {" "}
                 <MdEmail className="icon" />{" "}
                 <p className="infoText">evgeni.tech.uk@gmail.com</p>
               </Row>
-            </Container>
-          </Col>
+            </Col>
           </Row>
         <Row>
-          <Col xs={12} md={12} lg={4} className="mb-3">
+          <Col xs={12} md={12} lg={12} className="mb-3">
             <Container>
               {" "}
               <Row className="title d-flex justify-content-center ">Me</Row>
@@ -70,19 +77,21 @@ class App extends Component {
               <Row className="title d-flex justify-content-center mt-5">
                 Education
               </Row>
-              <Row className="text d-flex justify-content-center">
+              <Row className="text mb-2 mt-2">
+                2015 - 81 Sou Viktor Hugo / Mathematics Class /
+              </Row>
+              <Row className="text ">
                 2020 - Vocational High School of Electrical Engineering and
                 Automation / Computer networks /
               </Row>
               <Row className="certificates  d-flex justify-content-center mt-5 mb-3">
-                Certificates
               </Row>
-              <Row className="d-flex justify-content ">
+              <Row className="d-flex justify-content-center ml-5 mb-5">
                 <Col
                   xs={12}
                   md={12}
                   lg={6}
-                  className=" d-flex justify-content-centen"
+                  className=" d-flex justify-content-center"
                 >
                   <PinchZoomPan maxScale={2} zoomButtons={false} className="">
                     <img
@@ -93,38 +102,41 @@ class App extends Component {
                   </PinchZoomPan>
                 </Col>
 
+            
                 <Col
                   xs={12}
                   md={12}
                   lg={6}
-                  className=" d-flex justify-content-center  "
+                  className=" d-flex justify-content-center"
                 >
-                  <PinchZoomPan maxScale={2} zoomButtons={false} className="">
+                   <PinchZoomPan maxScale={2} zoomButtons={false} className="">
                     <img
                       className="item1"
                       src="https://softuni.bg/certificates/certificates/converttoimage/53496?code=c577c563"
                       alt="First slide"
                     />
                   </PinchZoomPan>
-                </Col>
+                  </Col>
               </Row>
-              <Row className={window.innerWidth < 410 ? "" : "fulsltack"}>
-                <PinchZoomPan
+              <Row
+                  className="d-flex justify-content-center mr-5"
+                >
+                  <PinchZoomPan
                   maxScale={5}
                   zoomButtons={false}
                   className="fullstackPinch"
                 >
                   <img src={Certificate} alt="First slide" />
                 </PinchZoomPan>
-              </Row>
-              <Row className="text2 d-flex justify-content-center mt-3"></Row>
+                 
+                </Row>
             </Container>
           </Col>
           <Col
             id="thirdCol"
-            className={window.innerWidth < 410 ? "lastCol ml-4" : "ml-4"}
+            className={window.innerWidth < 410 ? "lastCol ml-4" : "ml-4 mb-4"}
           >
-            <Container>
+            <Container className = "mb-5">
               <Row className="title2 software d-flex justify-content-center ">
                 Programming languages
               </Row>
@@ -144,7 +156,6 @@ class App extends Component {
                 </Row>
               </Row>
 
-             
               <Row className="text2 d-flex justify-content-center mt-2"></Row>
               <Row className="title2 mt-3 mb-1 d-flex justify-content-center">
                 Technologies
@@ -401,7 +412,6 @@ class App extends Component {
                       </Col>{" "}
                     </Row>
                   </Row>
-                
                 </Container>
               </Row>
             </Container>

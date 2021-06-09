@@ -247,43 +247,41 @@ letter-spacing:27px
 }
 .firstName1{
 color:#0F0F0F;
-font-size:140px;
+font-size:100px;
 font-family: 'Playfair Display', serif;
-margin-left: -18px;
+margin-top: -20px !important;
 }
 .firstName2{
   color:#0F0F0F;
-  font-size:140px;
+  font-size:100px;
   font-family: 'Playfair Display', serif;
-  margin-top: -112px;
-  letter-spacing: 19px;
+
 }
 .infoDiv{
   width:60% !important
 }
-.custom{
-  margin-left: -62px !important;
-}
-.custom1{
-  margin-left: -56px !important;
-}
+
 .secondName{
   color:#0F0F0F;
-  font-size: 60px;
+  font-size: 90px;
   letter-spacing:3px;
-  margin-top: -70px;
   font-family: 'Playfair Display', serif;
+  margin-top: -15px !important;
+  
 }
 .jobTitle{
   font-family: 'Playfair Display', serif;
   color:black;
-  font-size: 40px;
+  font-size: 60px;
   letter-spacing:3px;
-  margin-top: -18px;
+  margin-top:18px;
   background-color:black;
   color:#22ACC0;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 10px;
+  height: 90px;
+  width:290px;
+  
 }
 .icon{
   color:#22ACC0;
@@ -293,8 +291,10 @@ margin-left: -18px;
   border-radius:50px;
   margin-left: 20px;
   margin-right: 10px;
+  border:1px solid #22ACC0;
   }
   .infoText{
+    color:#22ACC0;
   }
   .text{
     font-size:13.5px;
@@ -329,7 +329,6 @@ margin-left: -18px;
     z-index: 3 !important;
   }
 .fulsltack{
-margin-top: -190px !important;
 margin-left: 0px !important;
 }
 .lastCol{
@@ -345,6 +344,10 @@ margin-left: 0px !important;
   margin-bottom: -15px;
   font-size:16px;
   color: #22ACC0 !important
+}
+.infoRow{
+  display:flex !important;
+  justify-content:space-evenly !important
 }
 .col1{
   background-color: #22ACC0;
