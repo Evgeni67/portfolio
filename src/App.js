@@ -53,7 +53,7 @@ class App extends Component {
             </Row>
             <Row className=" d-flex justify-content-left ">
               <CgWebsite className="icon" />{" "}
-              <p className="infoText">www.localhost:22.com</p>
+              <p className="infoText">https://www.linkedin.com/</p>
             </Row>
           </Col>
           <Col sm={5}  xs = {12} md = {4}id="secondCol">
@@ -133,7 +133,7 @@ class App extends Component {
             </Row>
 
             <Row className="title2 d-flex justify-content-left mt-3">
-              Previous projects
+              Previous projects33
             </Row>
             <Row className="text2 d-flex justify-content-center mt-2">
               <Carousel className="carousel2">
