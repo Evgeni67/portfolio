@@ -33,7 +33,7 @@ class App extends Component {
               <Row className = "d-flex justify-content-center">
                 {" "}
                 <ImLocation className="icon" />{" "}
-                <p className="infoText">Sofia, Bulgarias</p>{" "}
+                <p className="infoText">Sofia, Bulgaria</p>{" "}
               </Row>
             </Col>
             <Col xs={12} lg={3}>
