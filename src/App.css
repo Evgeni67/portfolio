@@ -1,4 +1,4 @@
-
+/* 
 img {
   width: 100%;
   height: 100%;
@@ -164,6 +164,8 @@ p{
   border-top:none;
   border-right:none;
   border-bottom:none;
+
+  
 }
 .carousel1{
   margin-left: 15px;
@@ -234,4 +236,146 @@ letter-spacing:27px
 }
 .carousel2{
   margin-left: -160px;
+} */
+
+
+
+
+#firstCol{
+  background-color:#22ACC0;
+  height:100%
+}
+.firstName1{
+color:#0F0F0F;
+font-size:140px;
+font-family: 'Playfair Display', serif;
+margin-left: -18px;
+}
+.firstName2{
+  color:#0F0F0F;
+  font-size:140px;
+  font-family: 'Playfair Display', serif;
+  margin-top: -112px;
+  letter-spacing: 19px;
+}
+.infoDiv{
+  width:60% !important
+}
+.custom{
+  margin-left: -62px !important;
+}
+.custom1{
+  margin-left: -56px !important;
+}
+.secondName{
+  color:#0F0F0F;
+  font-size: 60px;
+  letter-spacing:3px;
+  margin-top: -70px;
+  font-family: 'Playfair Display', serif;
+}
+.jobTitle{
+  font-family: 'Playfair Display', serif;
+  color:black;
+  font-size: 40px;
+  letter-spacing:3px;
+  margin-top: -18px;
+  background-color:black;
+  color:#22ACC0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.icon{
+  color:#22ACC0;
+  background-color:black;
+  padding:7px;
+  font-size: 30px;
+  border-radius:50px;
+  margin-left: 20px;
+  margin-right: 10px;
+  }
+  .infoText{
+  }
+  .text{
+    font-size:13.5px;
+    font-weight:400;
+    padding-left: 20px;
+    text-align: left;
+    margin-left:5px !important;
+    border: 1px solid #22ACC0;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    letter-spacing: 1px;
+  color:#22ACC0;
+    
+  }
+  .title{
+    margin-left:70px !important;
+    color:#22ACC0;
+    font-size:30px
+  }
+  .certificates{
+    margin-top: 50px;
+    color:#22ACC0;
+    font-size:30px
+  }
+  .item1{
+    width:300px
+  }
+  .item3{
+    width:350px;
+    margin-top: -200px;
+    z-index: 3 !important;
+  }
+.fulsltack{
+margin-top: -190px !important;
+margin-left: 0px !important;
+}
+.lastCol{
+  margin-top: -530px;
+}
+.skillInline{
+  height:10px !important;
+  width:290px !important;
+  border: 1px solid #22ACC0 !important;
+  margin-left: 0px !important;
+}
+.skillName{
+  margin-bottom: -15px;
+  font-size:16px;
+  color: #22ACC0 !important
+}
+.col1{
+  background-color: #22ACC0;
+}
+.skill2{
+  border:2px solid #22ACC0;
+  background-color:#22ACC0;
+  color:black;
+  border-radius: 50px;
+  width:55px;
+  height:55px;
+  text-align:center;
+  padding-top: 15px;
+  margin-left: 10px;
+}
+.skill{
+  border:2px solid #22ACC0;
+  border-radius: 50px;
+  width:55px;
+  height:55px;
+  text-align:center;
+  padding-top: 15px;
+  margin-left: 10px;
+  color: #22ACC0 !important
+}
+.title2{
+  color: #22ACC0 !important;
+  font-size:23px;
+  margin-bottom: 16px;
+  margin-left: -30px !important;
+}
+.text2{
+  margin-left: -50px !important;
 }

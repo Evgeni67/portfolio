@@ -7,276 +7,404 @@ import { FaMobileAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
+import Certificate from "./certificate4.jpg";
+import PinchZoomPan from "react-image-zoom-pan";
 class App extends Component {
-  componentDidMount() {
-    console.log(window.innerWidth);
-    if(window.innerWidth > 400){
-    document.getElementById(
-      "firstCol"
-    ).style.height = `${window.innerHeight}px`;
-    document.getElementById(
-      "secondCol"
-    ).style.height = `${window.innerHeight}px`;
-    document.getElementById(
-      "thirdCol"
-    ).style.height = `${window.innerHeight}px`;
-  }
-}
   render() {
     return (
       <>
-        <Row className="rowLaptop d-flex justify-content-center ">
-          <Col sm={4} xs = {12} md = {4}id="firstCol">
-            <Row className=" d-flex justify-content-center ">
-              <p className="firstName1">EVG</p>
+      <Row className = "mb-5">
+          <Col className="d-flex justify-content-center" id="firstCol">
+            <Container className="firstContainer ml-1">
+              <Row className=" d-flex justify-content-center ">
+                <p className="firstName1">EVG</p>
               </Row>
               <Row className=" d-flex justify-content-center ">
-              <p className="firstName2">ENI</p>
+                <p className="firstName2">ENI</p>
               </Row>
-            <Row className=" d-flex justify-content-center ">
-              <p className="secondName">Gyurov</p>
-            </Row>
-            <Row className=" d-flex justify-content-center ">
-              <p className="jobTitle">Web Developer</p>
-            </Row>
-            <Row className=" d-flex justify-content-left mt-5">
-              <FaMobileAlt className="icon " />{" "}
-              <p className="infoText">(+359) 876 710 109</p>
-            </Row>
-            <Row className=" d-flex justify-content-left ">
-              <ImLocation className="icon" />{" "}
-              <p className="infoText">Sofia, Bulgaria</p>
-            </Row>
-            <Row className=" d-flex justify-content-left ">
-              <MdEmail className="icon" />{" "}
-              <p className="infoText">evgeni776@abv.bg</p>
-            </Row>
-            <Row className=" d-flex justify-content-left ">
-              <CgWebsite className="icon" />{" "}
-              <p className="infoText">https://www.linkedin.com/</p>
-            </Row>
-          </Col>
-          <Col sm={5}  xs = {12} md = {4}id="secondCol">
-            {" "}
-            <Row className="title d-flex justify-content-left ">Me</Row>
-            <Row className="text d-flex justify-content-center">
-              I am a big space fan and Ive always loved everything tech related.
-              I remember visiting one of those LEGO robotic courses as a child,
-              then I found my passion about coding. My other hobbies are all
-              mountain related, during the winter I'll grab my ski and slice the
-              powder while during the summer Id rather jump on my bike and hit
-              the local downhill tracks at Vitosha.
-            </Row>
-            <Row className="title d-flex justify-content-left mt-5">
-              Education
-            </Row>
-            <Row className="text d-flex justify-content-center">
-              2020 - Vocational High School of Electrical Engineering and
-              Automation / Computer networks /
-            </Row>
-            <Row className="title certificates d-flex justify-content-left mt-5">
-              Certificates
-            </Row>
-            <Row className="text2 d-flex justify-content-center mt-3">
-              <Carousel className="carousel1">
-                <Carousel.Item className="caruselItem">
-                  <img
-                    className="item1"
-                    src="https://softuni.bg/certificates/certificates/converttoimage/24363?code=c95af639"
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item className="caruselItem">
-                  <img
-                    className="item2 "
-                    src="https://softuni.bg/certificates/certificates/converttoimage/53496?code=c577c563"
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item className="caruselItem">
-                  <img
-                    className="item3"
-                    src="https://softuni.bg/certificates/certificates/converttoimage/53496?code=c577c563"
-                    alt="Third slide"
-                  />
-
-                  <Carousel.Caption className="caption ">
-                    <img
-                      className="loadingImg"
-                      src="https://i.gifer.com/7VE.gif"
-                    />
-                    <h3>C# OOP ADVANCED</h3>
-                    <p>On the way 🚀</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </Row>
-          </Col>
-          <Col sm={3}  xs = {12} md = {4}id="thirdCol">
-            <Row className="title2 software d-flex justify-content-left ">
-              Programming languages
-            </Row>
-            <Row className="text2 d-flex justify-content-center">
-              <Row className="skillRow">
-                <h className="skill"> C# </h> <h className="skill"> JS </h>{" "}
-                <h className="skill"> JAVA </h> <h className="skill"> TS </h>
+              <Row className=" d-flex justify-content-center ">
+                <p className="secondName">Gyurov</p>
               </Row>
-            </Row>
-            <Row className="title2 d-flex justify-content-left mt-2">
-              Framework
-            </Row>
-            <Row className="text2 d-flex justify-content-center">
-              <Row className="skillRow">
-                <h className="skill2"> M </h> <h className="skill2"> E </h>{" "}
-                <h className="skill2"> R </h> <h className="skill2"> N </h>
+              <Row className=" d-flex justify-content-center ">
+                <p className="jobTitle">Web Developer</p>
               </Row>
-            </Row>
-
-            <Row className="title2 d-flex justify-content-left mt-3">
-              Previous projects33
-            </Row>
-            <Row className="text2 d-flex justify-content-center mt-2">
-              <Carousel className="carousel2">
-                <Carousel.Item className="carousle2Item">
-                  <img
-                    src="https://prikachi.net/images/R9Y2B.png"
-                    className="logoProject"
-                  />
-                </Carousel.Item>
-                <Carousel.Item className="carousle2Item">
-                  <img
-                    src="https://prikachi.net/images/R9Y2B.png"
-                    className="logoProject"
-                  />
-                </Carousel.Item>
-                <Carousel.Item className="carousle2Item">
-                  <img
-                    src="https://prikachi.net/images/RiDvl.png"
-                    className="logoProject"
-                  />
-                </Carousel.Item>
-              </Carousel>
-            </Row>
-            <Row className="title2 mt-3 mb-1 d-flex justify-content-left">
-              Technologies
-            </Row>
-            <Row className = "d-flex justify-content-left">
-            <Container className = " ">
+              
             
-            <Row className="skillName d-flex justify-content-left">React </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}> </Col>
-                <Col sm={2}xs = {2}> </Col>{" "}
+              <Row className=" d-flex justify-content-center mt-5">
+                <ImLocation className="icon custom1" />{" "}
+                <p className="infoText">Sofia, Bulgarias</p>
               </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">Express </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}> </Col>{" "}
+              <Row className=" d-flex justify-content-center custom">
+                <FaMobileAlt className="icon " />{" "}
+                <p className="infoText"> (+359) 876 710 109</p>
               </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">Mongo </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col xs = {2}sm={2} className = "col1"> </Col>
-                <Col xs = {2}sm={2} className = "col1"> </Col>
-                <Col xs = {2}sm={2} className = "col1"> </Col>
-                <Col xs = {2}sm={2} className = "col1"> </Col>
-                <Col xs = {2}sm={2} className = "col1"> </Col>
-                <Col xs = {2}sm={2}> </Col>{" "}
+             
+             
+              <Row className=" d-flex justify-content-center ">
+                <CgWebsite className="icon" />{" "}
+                <p className="infoText">https://www.linkedin.com/</p>
               </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">Node </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2}> </Col>{" "}
+              <Row className=" d-flex justify-content-center ">
+                <MdEmail className="icon" />{" "}
+                <p className="infoText">evgeni.tech.uk@gmail.com</p>
               </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">TypeScript </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2} className = "col1"> </Col>
-                <Col xs = {2} sm={2} > </Col>
-                <Col xs = {2} sm={2} > </Col>
-                <Col xs = {2} sm={2} > </Col>
-                <Col xs = {2} sm={2}> </Col>{" "}
-              </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">PostgreSql </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col xs = {2}  sm={2} className = "col1"> </Col>
-                <Col xs = {2}  sm={2} className = "col1"> </Col>
-                <Col xs = {2}  sm={2} > </Col>
-                <Col xs = {2} sm={2} > </Col>
-                <Col xs = {2} sm={2} > </Col>
-                <Col xs = {2} sm={2}> </Col>{" "}
-              </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">SCRUM </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}> </Col>{" "}
-              </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">REDUX </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>{" "}
-              </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">GitHub </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}className = "col1"> </Col>
-                <Col sm={2} xs = {2}> </Col>{" "}
-              </Row>
-            </Row>
-            <Row className="skillName d-flex justify-content-left">Heroku </Row>
-            <Row className=" d-flex justify-content-left mt-2">
-              <Row className="skillInline  mt-2">
-                <Col sm={2}xs = {2} className = "col1"> </Col>
-                <Col sm={2}xs = {2} className = "col1"> </Col>
-                <Col sm={2}xs = {2} className = "col1"> </Col>
-                <Col sm={2}xs = {2} className = "col1"> </Col>
-                <Col sm={2}xs = {2} > </Col>
-                <Col sm={2}xs = {2}> </Col>{" "}
-              </Row>
-            </Row>
             </Container>
-            </Row>
-            
-            
+          </Col>
+          </Row>
+        <Row>
+          <Col xs={12} md={12} lg={4} className="mb-3">
+            <Container>
+              {" "}
+              <Row className="title d-flex justify-content-center ">Me</Row>
+              <Row className="text d-flex justify-content-center">
+                I am a big space fan and Ive always loved everything tech
+                related. I remember visiting one of those LEGO robotic courses
+                as a child, then I found my passion about coding. A few years
+                later Ive joined Softuni and there my journey has began. After
+                that I continued with Strive School and got my first FullStack
+                Certificate, now I am working on my own projects, mastering my
+                skills and developing new ones. In the meanwhile I am looking
+                for a job requiring Mern Stack developer but all job offers are
+                more than welcome
+              </Row>
+              <Row className="title d-flex justify-content-center mt-5">
+                Education
+              </Row>
+              <Row className="text d-flex justify-content-center">
+                2020 - Vocational High School of Electrical Engineering and
+                Automation / Computer networks /
+              </Row>
+              <Row className="certificates  d-flex justify-content-center mt-5 mb-3">
+                Certificates
+              </Row>
+              <Row className="d-flex justify-content ">
+                <Col
+                  xs={12}
+                  md={12}
+                  lg={6}
+                  className=" d-flex justify-content-centen"
+                >
+                  <PinchZoomPan maxScale={2} zoomButtons={false} className="">
+                    <img
+                      className="item1"
+                      src="https://softuni.bg/certificates/certificates/converttoimage/24363?code=c95af639"
+                      alt="First slide"
+                    />
+                  </PinchZoomPan>
+                </Col>
+
+                <Col
+                  xs={12}
+                  md={12}
+                  lg={6}
+                  className=" d-flex justify-content-center  "
+                >
+                  <PinchZoomPan maxScale={2} zoomButtons={false} className="">
+                    <img
+                      className="item1"
+                      src="https://softuni.bg/certificates/certificates/converttoimage/53496?code=c577c563"
+                      alt="First slide"
+                    />
+                  </PinchZoomPan>
+                </Col>
+              </Row>
+              <Row className={window.innerWidth < 410 ? "" : "fulsltack"}>
+                <PinchZoomPan
+                  maxScale={5}
+                  zoomButtons={false}
+                  className="fullstackPinch"
+                >
+                  <img src={Certificate} alt="First slide" />
+                </PinchZoomPan>
+              </Row>
+              <Row className="text2 d-flex justify-content-center mt-3"></Row>
+            </Container>
+          </Col>
+          <Col
+            id="thirdCol"
+            className={window.innerWidth < 410 ? "lastCol ml-4" : "ml-4"}
+          >
+            <Container>
+              <Row className="title2 software d-flex justify-content-center ">
+                Programming languages
+              </Row>
+              <Row className="text2 d-flex justify-content-center">
+                <Row className="skillRow">
+                  <h className="skill"> C# </h> <h className="skill"> JS </h>{" "}
+                  <h className="skill"> JAVA </h> <h className="skill"> TS </h>
+                </Row>
+              </Row>
+              <Row className="title2 d-flex justify-content-center mt-2">
+                Framework
+              </Row>
+              <Row className="text2 d-flex justify-content-center">
+                <Row className="skillRow">
+                  <h className="skill2"> M </h> <h className="skill2"> E </h>{" "}
+                  <h className="skill2"> R </h> <h className="skill2"> N </h>
+                </Row>
+              </Row>
+
+             
+              <Row className="text2 d-flex justify-content-center mt-2"></Row>
+              <Row className="title2 mt-3 mb-1 d-flex justify-content-center">
+                Technologies
+              </Row>
+              <Row className="d-flex justify-content-center">
+                <Container className="mr-5 ">
+                  <Row className="skillName d-flex justify-content-center">
+                    React{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    Express{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    Mongo{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    Node{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    TypeScript{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    PostgreSql{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>
+                      <Col xs={2} sm={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    SCRUM{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    REDUX{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    GitHub{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                  <Row className="skillName d-flex justify-content-center">
+                    Heroku{" "}
+                  </Row>
+                  <Row className=" d-flex justify-content-center mt-2">
+                    <Row className="skillInline  mt-2">
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2} className="col1">
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>
+                      <Col sm={2} xs={2}>
+                        {" "}
+                      </Col>{" "}
+                    </Row>
+                  </Row>
+                
+                </Container>
+              </Row>
+            </Container>
           </Col>
         </Row>
       </>
@@ -285,3 +413,37 @@ class App extends Component {
 }
 
 export default App;
+{
+  /* <Carousel className="carousel1">
+<Carousel.Item className="caruselItem">
+  <img
+    className="item1"
+    src="https://softuni.bg/certificates/certificates/converttoimage/24363?code=c95af639"
+    alt="First slide"
+  />
+</Carousel.Item>
+<Carousel.Item className="caruselItem">
+  <img
+    className="item2 "
+    src="https://softuni.bg/certificates/certificates/converttoimage/53496?code=c577c563"
+    alt="Second slide"
+  />
+</Carousel.Item>
+<Carousel.Item className="caruselItem">
+  <img
+    className="item3"
+    src="https://softuni.bg/certificates/certificates/converttoimage/53496?code=c577c563"
+    alt="Third slide"
+  />
+
+  <Carousel.Caption className="caption ">
+    <img
+      className="loadingImg"
+      src="https://i.gifer.com/7VE.gif"
+    />
+    <h3>C# OOP ADVANCED</h3>
+    <p>On the way 🚀</p>
+  </Carousel.Caption>
+</Carousel.Item>
+</Carousel> */
+}
